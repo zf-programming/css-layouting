@@ -1,14 +1,19 @@
 div {
-    width: 230px;
-    height: 230px;
-    margin: 20px auto;
-    background-color: aqua;
-    padding: 30px;
-    text-align: justify;
-    text-indent: 40px;
-    border-left: 5px solid black;
-    /* border left, right,top, bottom */
+    width: 600px;
+    margin: auto;
+    box-sizing: border-box;
+    /* box-sizing untuk fix ukuran width dan height */
+    /* tidak terpengaruh oleh padding dan border */
+}
+
+.satu {
+    background-color: coral;
+    padding: 20px;
     border: 5px solid red;
-    /* shorthand: width, style, color */
-    /* border juga menambah ukuran dari width dan height */
+}
+
+.dua {
+    background-color: lightseagreen;
+    padding: 15px;
+    border: 10px dotted green;
 }
