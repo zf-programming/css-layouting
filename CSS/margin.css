@@ -1,24 +1,31 @@
-div {
-    margin-left: auto; 
-    margin-right: auto; /* auto harus keduanya */
-    /* auto akan memposisikan box di tengah parent nya */
-    /* dalam kasus ini parentnya body */
-}
-
 .satu {
     width: 200px;
     height: 200px;
     background-color: cornflowerblue;
+    margin: 50px;
+    /* keempat sisinya 50px */
 }
 
 .dua {
     width: 150px;
     height: 150px;
     background-color: coral;
+    margin: 50px 25px;
+    /* vertical, horizontal */
 }
 
 .tiga {
     width: 75px;
     height: 75px;
     background-color: lightgreen;
+    margin: 50px auto 50px;
+    /* top, horizontal, bottom */
+}
+
+.empat {
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    margin: 50px 30px 20px 10px;
+    /* top, right, bottom, left */
 }
