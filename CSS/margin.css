@@ -1,25 +1,21 @@
-div {
-    display: inline-block;
-    /* agar satu baris dan dapat diubah dimensinya */
-}
-
 .satu {
     width: 200px;
     height: 200px;
     background-color: cornflowerblue;
-    margin-right: 50px;
+    margin-left: -100px;
 }
-/* Margin overlapping horizontal akan dijumlahkan */
 
 .dua {
     width: 150px;
     height: 150px;
     background-color: coral;
-    margin-left: 50px;
+    margin-top: -50px; 
+    /* value negatif maka margin nya berlawanan */
 }
 
 .tiga {
     width: 75px;
     height: 75px;
     background-color: lightgreen;
+    margin-top: -200px;
 }
