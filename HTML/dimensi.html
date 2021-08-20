@@ -6,18 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dimensi dan Overflow</title>
     <style>
-        .satu, .tiga {
+        .tiga {
             width: 300px;
             height: 200px;
             background-color: violet;
-        }
-        .dua {
-            width: 120%; /* akan keluar jika melebihi parent */
-            background-color: lightblue;
-        }
-
-        .empat {
-            width: 100%;
+            overflow: auto; /* visible(default),
+            auto(scroll jika melebihi box), scroll(fixed scroll), hidden(konten dihidden) */
         }
     </style>
 </head>
@@ -30,21 +24,19 @@
 
     <!-- Konten melebihi box -->
     <div class="tiga">
-        <div class="empat">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                Ratione, adipisci! Beatae qui hic, consectetur vero 
-                tempore harum reprehenderit, recusandae quia culpa adipisci 
-                labore, ipsa quam fugit voluptas dolore eius aliquam.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                Ratione, adipisci! Beatae qui hic, consectetur vero 
-                tempore harum reprehenderit, recusandae quia culpa adipisci 
-                labore, ipsa quam fugit voluptas dolore eius aliquam.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                Ratione, adipisci! Beatae qui hic, consectetur vero 
-                tempore harum reprehenderit, recusandae quia culpa adipisci 
-                labore, ipsa quam fugit voluptas dolore eius aliquam.
-            </p>
-        </div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Ratione, adipisci! Beatae qui hic, consectetur vero 
+            tempore harum reprehenderit, recusandae quia culpa adipisci 
+            labore, ipsa quam fugit voluptas dolore eius aliquam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Ratione, adipisci! Beatae qui hic, consectetur vero 
+            tempore harum reprehenderit, recusandae quia culpa adipisci 
+            labore, ipsa quam fugit voluptas dolore eius aliquam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Ratione, adipisci! Beatae qui hic, consectetur vero 
+            tempore harum reprehenderit, recusandae quia culpa adipisci 
+            labore, ipsa quam fugit voluptas dolore eius aliquam.
+        </p>
     </div>
 </body>
 </html>
