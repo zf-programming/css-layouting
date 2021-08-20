@@ -1,17 +1,21 @@
+div {
+    display: inline-block;
+    /* agar satu baris dan dapat diubah dimensinya */
+}
+
 .satu {
     width: 200px;
     height: 200px;
     background-color: cornflowerblue;
-    margin-bottom: 100px;
+    margin-right: 50px;
 }
-/* Margin overlapping vertical akan diambil value tertinggi */
-/* jadi tidak akan dijumlah */
+/* Margin overlapping horizontal akan dijumlahkan */
 
 .dua {
     width: 150px;
     height: 150px;
     background-color: coral;
-    margin-top: 50px;
+    margin-left: 50px;
 }
 
 .tiga {
