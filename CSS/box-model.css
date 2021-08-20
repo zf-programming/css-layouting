@@ -1,0 +1,12 @@
+div {
+    width: 240px;
+    height: 240px;
+    margin: 20px auto;
+    background-color: aqua;
+    padding: 30px;
+    /* padding akan menambah ukuran width & height */
+    /* pola padding shorthand sama dengan margin */
+    /* padding tidak bisa auto dan negatif */
+    text-align: justify;
+    text-indent: 40px;
+}
