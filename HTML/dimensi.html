@@ -6,25 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dimensi dan Overflow</title>
     <style>
-        .div1 {
-            width: 100%; /* px, %, in, cm, mm, pt, pc */
+        .satu, .tiga {
+            width: 300px;
             height: 200px;
-            background-color: cadetblue;
+            background-color: violet;
         }
-        .div2 {
-            width: 400px;
-            height: 150px;
-            background-color: coral;
+        .dua {
+            width: 120%; /* akan keluar jika melebihi parent */
+            background-color: lightblue;
+        }
+
+        .empat {
+            width: 100%;
         }
     </style>
 </head>
 <body>
-    <div class="div1">
-        <h1>Hello World</h1>
+    <div class="satu">
+        <div class="dua">
+            <h1>Hello World</h1>
+        </div>
     </div>
 
-    <div class="div2">
-        <h1>Halo Dunia</h1>
+    <!-- Konten melebihi box -->
+    <div class="tiga">
+        <div class="empat">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Ratione, adipisci! Beatae qui hic, consectetur vero 
+                tempore harum reprehenderit, recusandae quia culpa adipisci 
+                labore, ipsa quam fugit voluptas dolore eius aliquam.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Ratione, adipisci! Beatae qui hic, consectetur vero 
+                tempore harum reprehenderit, recusandae quia culpa adipisci 
+                labore, ipsa quam fugit voluptas dolore eius aliquam.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Ratione, adipisci! Beatae qui hic, consectetur vero 
+                tempore harum reprehenderit, recusandae quia culpa adipisci 
+                labore, ipsa quam fugit voluptas dolore eius aliquam.
+            </p>
+        </div>
     </div>
 </body>
 </html>
