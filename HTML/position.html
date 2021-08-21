@@ -11,20 +11,28 @@
             height: 200px;
         }
 
+        .container {
+            width: 800px;
+            height: 800px;
+            margin: auto;
+            border: 4px solid black;
+            position: relative; /* agar parent naik 1 layer, sama dengan layer box dua */
+        }
+
         .satu {
             background-color: coral;
         }
 
         .dua {
             background-color: lightskyblue;
-            position: relative;
-            /* Relative naik 1 layer
+            position: absolute;
+            top: 0; /* akan di pojok body, jika parentnya (container) masih static dibawah layer box dua */
+            right: 0;
+            /* Absolute naik 1 layer juga
              * punya akses ke properti top, bottom, left, right
-             * ruang di layer sebelumnya masih ada
+             * ruang di layer sebelumnya hilang
              * jika dipindahkan yang naik akan pindah
-             * posisi relatif terhadap posisi semula
-             * ruang pada layer sebelumnya masih tetap
-             * jarang digunakan untuk memindahkan posisi
+             * posisi relatif terhadap elemen parent-nya (di layer yang sama)
              */
         }
 
@@ -34,8 +42,10 @@
     </style>
 </head>
 <body>
-    <div class="satu"></div>
-    <div class="dua"></div>
-    <div class="tiga"></div>
+    <div class="container">
+        <div class="satu"></div>
+        <div class="dua"></div>
+        <div class="tiga"></div>
+    </div>
 </body>
 </html>
