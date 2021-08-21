@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+        }
+
+        .satu {
+            margin-top: 0;
+            margin-left: 0;
+            background-color: orange;
+            z-index: 1; 
+            /* mengatur posisi layer yang non-static 
+             * value 1 artinya 1 layer lebih tinggi dari default non-static
+             * value semakin besar semakin tinggi/atas
+             */
+        }
+
+        .dua {
+            margin-top: 100px;
+            margin-left: 100px;
+            background-color: lightskyblue;
+            z-index: 9999;
+            /* pasti di paling depan */
+        }
+
+        .tiga {
+            margin-top: 200px;
+            margin-left: 200px;
+            background-color: blueviolet;
+            z-index: -9999;
+            /* pasti di paling belakang */
+        }
+    </style>
+</head>
+<body>
+    <div class="satu"></div>
+    <div class="dua"></div>
+    <div class="tiga"></div>
+</body>
+</html>
