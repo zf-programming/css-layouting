@@ -5,8 +5,12 @@
     padding: 5px;
 }
 
-img {
-    width: 150px;
+.kotak {
+    width: 80px;
+    height: 80px;
+    background-color: coral;
+    text-align: center;
+    line-height: 80px; /* ditengah kotak */
+    font-size: 30px;
     float: left;
-    margin-right: 10px;
 }
