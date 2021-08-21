@@ -3,7 +3,6 @@
     border: 1px solid black;
     margin: auto;
     padding: 5px;
-    overflow: auto; /* clear float menggunakan overflow */
 }
 
 .kiri {
@@ -27,4 +26,12 @@
     height: 500px;
     background-color: limegreen;
     float: left;
+}
+
+/* Clear float menggunakan properti clear
+ * tapi membuat kode tidak rapi di HTML
+ */
+.clear {
+    clear: left;
+    /* left, right, atau both */
 }
