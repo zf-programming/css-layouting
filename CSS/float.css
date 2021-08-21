@@ -5,22 +5,8 @@
     padding: 5px;
 }
 
-.satu,
-.dua,
-.tiga {
-    width: 100px;
-    height: 100px;
-}
-
-.satu {
-    background-color: lightcoral;
-}
-
-.dua {
-    background-color: lightskyblue;
-    float: right; /* kotak biru akan keluar dari flow */
-}
-
-.tiga {
-    background-color: aquamarine;
+img {
+    width: 150px;
+    float: left;
+    margin-right: 10px;
 }
