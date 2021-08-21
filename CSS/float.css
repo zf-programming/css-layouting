@@ -28,10 +28,19 @@
     float: left;
 }
 
-/* Clear float menggunakan properti clear
- * tapi membuat kode tidak rapi di HTML
+/* Menggunakan micro-clearfix
+ * direkomendasikan
  */
-.clear {
-    clear: left;
-    /* left, right, atau both */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
 }
